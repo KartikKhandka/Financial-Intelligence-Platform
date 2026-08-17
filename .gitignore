@@ -1,0 +1,43 @@
+# ── Python ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual Environment ───────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── IDE ────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Environment ───────────────────────────────────
+.env
+
+# ── Database ──────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Output ────────────────────────────────────────
+output/*.csv
+output/*.log
+output/*.html
+
+# ── OS ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Jupyter ───────────────────────────────────────
+.ipynb_checkpoints/
