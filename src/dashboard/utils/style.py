@@ -28,25 +28,32 @@ def apply_custom_css():
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800;900&display=swap');
 
-        html, body, [class*="css"] {{
+        html, body, [class*="css"] {
             font-family: 'Inter', sans-serif !important;
             background-color: #131124 !important;
             color: #9ca3af !important;
             font-size: 14px !important;
-        }}
+        }
 
-        [data-testid="stSidebar"], [data-testid="collapsedControl"] {{
+        [data-testid="stSidebar"], [data-testid="collapsedControl"] {
             display: none !important;
-        }}
+        }
 
-        .stApp {{
+        .stApp {
             background-color: #131124 !important;
             background-image: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.15) 0%, rgba(19, 17, 36, 0) 50%) !important;
             background-attachment: fixed;
-        }}
+        }
 
         footer {visibility: hidden;}
-        .stDeployButton {display: none;}
+
+        .block-container, 
+        [data-testid="stAppViewBlockContainer"], 
+        [data-testid="stMainBlockContainer"] {
+            padding-top: 1.5rem !important;
+            padding-bottom: 0rem !important;
+            margin-top: 0rem !important;
+        }
 
         section[data-testid="stSidebar"] {
             background-color: #1A1831 !important;
