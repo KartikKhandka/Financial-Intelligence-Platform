@@ -27,10 +27,9 @@ def get_peer_group_data(group_name):
 
     conn = get_connection()
     query = """
-        SELECT p.company_id, p.is_benchmark, c.company_name
-        FROM peer_groups p
-        JOIN companies c ON p.company_id = c.company_id
-        WHERE p.peer_group_name = ?
+        SELECT company_id, is_benchmark
+        FROM peer_groups
+        WHERE peer_group_name = ?
     """
     df = pd.read_sql_query(query, conn, params=[group_name])
     conn.close()
