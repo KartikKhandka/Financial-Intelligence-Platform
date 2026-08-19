@@ -28,6 +28,7 @@ ENV/
 *.db
 *.sqlite
 *.sqlite3
+!data/nifty100.db
 
 # ── Output ────────────────────────────────────────
 output/*.csv
